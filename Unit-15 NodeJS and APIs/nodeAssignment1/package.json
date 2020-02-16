@@ -1,0 +1,14 @@
+{
+  "name": "nodeassignment",
+  "version": "1.0.1",
+  "description": "this application represent assignment given at the end of intro to express module.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hero-007",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

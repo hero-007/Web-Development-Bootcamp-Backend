@@ -1,0 +1,19 @@
+{
+  "name": "blogapp",
+  "version": "1.0.0",
+  "description": "-> Setup Blog App\r -> Create Blog Model \r -> Defining Routes in Blog App\r     1. INDEX (/blogs -- GET) => This will show list of all blogs\r     2. NEW (/blogs/new -- GET) => Load form for creating a new blog\r     3. CREATE (/blogs -- POST) => Add new blog to DB and redirect to \"/blogs\"\r     4. SHOW (/blogs/:id -- GET) => Display detailed information about single blog\r     5. EDIT (/blogs/:id/edit -- GET) => Load form for editing specific blog post\r     6. UPDATE (/blogs/:id -- PUT) => Update a particular post in the database\r     7. DESTROY (/blogs/:id -- DELETE) => Remove particular blog from the DB and redirect",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-sanitizer": "^1.0.5",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.9.0"
+  }
+}

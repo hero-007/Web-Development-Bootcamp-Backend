@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<div class="ui container main">
+    <% posts.forEach(function(post){ %>
+        <div class="ui raised very padded text container segment post-content" style="margin-top:50px;margin-bottom:50px;">
+            <h1><%= post.title %></h1>
+            <img src="<%= post.img %>" alt="Check your internet connection" class="ui medium image bordered centered rounded b-image">
+            <p><%= post.body.substring(0,150) %></p>
+            <a href="/blogPosts/<%= post._id %>"><button class="ui purple basic button">Read More!</button></a>
+            <a href="/blogPosts/<%= post._id %>/edit"><button class="ui green basic button">Edit Post</button></a>
+            <!-- Button for deleting the POST -->
+            <form action="/blogPosts/<%= post._id %>?_method=DELETE" method="POST" style="display: inline;">
+                <button type="submit" class="ui red basic button">Delete Post</button></a>
+            </form>
+        </div>
+    <% }) %>
+</div>
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie API Demonstration</title>
+        <link rel="stylesheet" href="./app.css">
+    </head>
+    <body>
+        <form action="/makeRequest" method="GET">
+            <input type="text" name="movieName">
+            <button>Submit</button>
+        </form>
+        <ol>
+            <% for(var i=0; i < movieList.length; i++){  %>
+                <% var title = movieList[i]["movieTitle"] %>
+                <% var year = movieList[i]["movieYear"] %>
+                <% var type = movieList[i]["type"] %>
+                <% var imdbID = movieList[i]["imdbID"] %>
+                    <li id= <%= imdbID %> ><strong><%= title %></strong></li>
+                <hr>
+            <%  } %>
+        </ol>
+    </body>
+    
+</html>

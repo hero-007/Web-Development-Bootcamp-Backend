@@ -1,0 +1,6 @@
+<%- include ("partials/header.ejs") %>
+<h1>Welcome to posts page</h1>
+<% posts.forEach(function(post){ %>
+    <li> <%= post.title %> - <strong> <%= post.author %></strong></li>
+<% }) %>
+<%- include ("partials/footer.ejs") %>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News Api Demonstration using Node</title>
+    </head>
+    <body>
+        <!-- form for allowing user to enter the topic -->
+        <form action="/makeRequest" method="POST">
+            <input type="text" placeholder="Enter the topic" name="topic">
+            <input type="submit" value="submit">
+        </form>
+
+        <hr>
+
+        <!-- Displaying the result -->
+        <% newsItems.forEach(function(item){ %>
+            <p> 
+                <h1><%= item.title %></h1>
+                <h2><%= item.author %></h2>
+                <p><%= item.description %></p>
+            </p>
+        <% }) %>
+    </body>
+</html>

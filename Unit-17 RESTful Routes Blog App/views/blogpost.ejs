@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") %>
+<div class="ui raised very padded text container segment post-content" style="margin: 70px 0px;">
+    <h1 class="ui huge header"><%= blog.title %></h1>
+    <img src="<%= blog.img %>" alt="check your internet connection" class="ui medium image bordered centered rounded b-image">
+    <p><%= blog.created.toDateString() %></p>
+    <p><%- blog.body %></p> 
+    <a href="/blogPosts"><button class="ui secondary basic button">Go Back!</button></a>
+    <a href="/blogPosts/<%= blog._id %>/edit"><button class="ui green basic button">Edit Post</button></a>
+    <!-- Buttom for deleting the post -->
+    <form action="/blogPosts/<%= blog._id %>?_method=DELETE" method="POST" style="display: inline;">
+        <button type="submit" class="ui red basic button">Delete Post</button>
+    </form>
+</div>
+<%- include("partials/footer.ejs") %>
