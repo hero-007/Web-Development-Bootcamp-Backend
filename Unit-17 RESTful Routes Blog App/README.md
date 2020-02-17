@@ -1,11 +1,11 @@
-#Blog App Requirements 
--> Setup Blog App
--> Create Blog Model 
--> Defining Routes in Blog App
-    1. INDEX (/blogs -- GET) => This will show list of all blogs
-    2. NEW (/blogs/new -- GET) => Load form for creating a new blog
-    3. CREATE (/blogs -- POST) => Add new blog to DB and redirect to "/blogs"
-    4. SHOW (/blogs/:id -- GET) => Display detailed information about single blog
-    5. EDIT (/blogs/:id/edit -- GET) => Load form for editing specific blog post
-    6. UPDATE (/blogs/:id -- PUT) => Update a particular post in the database
-    7. DESTROY (/blogs/:id -- DELETE) => Remove particular blog from the DB and redirect
+    <h2>Blog App Requirements</h2> 
+    <p>Defining Routes in Blog App</p>
+    <ul>
+    <li><strong>INDEX</strong> (/blogs -- GET) => This will show list of all blogs</li>
+    <li><strong>NEW</strong> (/blogs/new -- GET) => Load form for creating a new blog</li>
+    <li><strong>CREATE</strong> (/blogs -- POST) => Add new blog to DB and redirect to "/blogs"</li>
+    <li><strong>SHOW</strong> (/blogs/:id -- GET) => Display detailed information about single blog</li>
+    <li><strong>EDIT</strong> (/blogs/:id/edit -- GET) => Load form for editing specific blog post</li>
+    <li><strong>UPDATE</strong> (/blogs/:id -- PUT) => Update a particular post in the database</li>
+    <li><strong>DESTROY</strong> (/blogs/:id -- DELETE) => Remove particular blog from the DB and redirect</li>
+    </ul>
